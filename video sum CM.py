@@ -3,13 +3,13 @@ import numpy as np
 
 
 #change input video path
-video = cv2.VideoCapture('Air_force_One.mp4')
+video = cv2.VideoCapture('_xMr-HKMfVA.mp4')
 width = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
 height = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
 threshold = 1500000.
 
 #change output video path
-writer = cv2.VideoWriter('Air_force_One-copy.mp4', cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), 25, (width, height))
+writer = cv2.VideoWriter('_xMr-HKMfVA copy.mp4', cv2.VideoWriter_fourcc('m', 'p', '4', 'v'), 25, (width, height))
 ret, frame1 = video.read()
 prev_frame = frame1
 last_frame_num = video.get(cv2.CAP_PROP_FRAME_COUNT)
